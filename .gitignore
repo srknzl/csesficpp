@@ -1,0 +1,7 @@
+in.txt
+out.txt
+main
+*.dSYM
+.vscode
+a.out
+.DS_Store

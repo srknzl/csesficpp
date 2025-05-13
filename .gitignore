@@ -5,3 +5,4 @@ main
 .vscode
 a.out
 .DS_Store
+*.exe

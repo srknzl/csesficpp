@@ -16,10 +16,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             cin >> grid[i][j];
-        }
-    }
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
             bool allowed[4] = {};
             fill_n(allowed, 4, true);
             if (i - 1 >= 0) {
@@ -35,10 +31,6 @@ int main() {
                     break;
                 }
             }
-        }
-    }
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
             cout << grid[i][j];
         }
         cout << "\n";

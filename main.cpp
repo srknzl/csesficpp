@@ -10,4 +10,6 @@ int main() {
   cin.tie(nullptr);
   // freopen("in.txt", "r", stdin);
   // freopen("out.txt", "w", stdout);
+  
 }
+ 

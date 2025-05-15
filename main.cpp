@@ -12,4 +12,3 @@ int main() {
   // freopen("out.txt", "w", stdout);
   
 }
- 

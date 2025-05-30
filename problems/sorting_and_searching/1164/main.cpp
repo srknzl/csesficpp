@@ -17,12 +17,7 @@ int main() {
         events[2 * i] = {a, 0, i};
         events[2 * i + 1] = {b, 1, i};
     }
-    sort(events.begin(), events.end(), [](vector<int> a, vector<int> b) {
-      if (a[0] != b[0]) {
-        return a[0] < b[0];
-      }
-      return a[1] < b[1];
-    });
+    sort(events.begin(), events.end());
     vector<int> assignments(n);
     vector<int> availableRooms;
     int used = 0;

@@ -24,7 +24,7 @@ int main() {
       return a[1] < b[1];
     });
     vector<int> assignments(n);
-    unordered_set<int> availableRooms;
+    vector<int> availableRooms;
     int used = 0;
     for (int i = 0; i < 2 * n; i++) {
         vector<int> p = events[i];
@@ -33,12 +33,11 @@ int main() {
                 used++;
                 assignments[p[2]] = used;
             } else {
-                int nextRoom = *availableRooms.begin();
-                availableRooms.erase(availableRooms.begin());
-                assignments[p[2]] = nextRoom;
+                assignments[p[2]] = availableRooms.back();
+                availableRooms.pop_back();
             }
         } else {
-            availableRooms.insert(assignments[p[2]]);
+            availableRooms.push_back(assignments[p[2]]);
         }
     }
     cout << used << "\n";
